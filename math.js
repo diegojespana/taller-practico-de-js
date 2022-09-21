@@ -45,6 +45,16 @@ console.log({
     areaTriangulo,
 });
 
+function calcularAlturaTriangulo (ladosIguales, base){
+    if (ladosIguales == base){
+        console.warn('Este no es un triangulo isosceles')
+    } else {
+        return Math.sqrt(Math.pow(ladosIguales, 2) - (Math.pow(base, 2) / 4));
+    }
+}
+
+
+
 console.groupEnd('Triangulo')
 
 console.group('Circle')
